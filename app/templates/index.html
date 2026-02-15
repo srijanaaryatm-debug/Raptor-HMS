@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raptor HMS Dashboard</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Raptor Hotel Management System</h1>
+    <p>Operational dashboard · {{ today }}</p>
+  </header>
+
+  <main>
+    <section class="cards">
+      <article class="card">
+        <h2>Total Guests</h2>
+        <p>{{ metrics.total_guests }}</p>
+      </article>
+      <article class="card">
+        <h2>Available Rooms</h2>
+        <p>{{ metrics.available_rooms }}</p>
+      </article>
+      <article class="card">
+        <h2>Active Bookings</h2>
+        <p>{{ metrics.active_bookings }}</p>
+      </article>
+      <article class="card">
+        <h2>Pending Payments</h2>
+        <p>{{ metrics.pending_payments }}</p>
+      </article>
+    </section>
+
+    <section class="api-summary">
+      <h3>API Modules Included</h3>
+      <ul>
+        <li>Guest Management</li>
+        <li>Room Management</li>
+        <li>Booking & Check-In Management</li>
+        <li>Billing & Invoice Management</li>
+        <li>Staff & Shift Management</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Developed By Raptor Webcraft Technologies,2026-Copyright
+  </footer>
+</body>
+</html>
